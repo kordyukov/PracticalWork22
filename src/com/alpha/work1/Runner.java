@@ -9,7 +9,9 @@ public class Runner {
         double pi;
 
         System.out.println("Введмите значение ряда n:");
-        pi = MyCalculate.calcPi(scanner.nextInt());
+
+            pi = MyCalculate.calcPi(scanner.nextInt());
+
         System.out.println(pi);
 
     }
