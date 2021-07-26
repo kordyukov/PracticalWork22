@@ -16,5 +16,6 @@ public class ID {
     }
     public ID(){
         this.id = nextId;
+        this.id++;
     }
 }
