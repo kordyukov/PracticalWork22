@@ -4,17 +4,14 @@ package com.alpha.work1;
 
 public class MyCalculate {
     public static double calcPi(int n) {
-        double sum = 0;
+        double sum = 0.0;
+        for (int i = n; i > 0; i--) {
+            sum += Math.pow(-1, i + 1) / (2 * i - 1);
+            if (i == 1) {
+                sum *= 4;
 
-
-
-            for (int i = 1; i < n; i++) {
-                double element = Math.pow(-1, i + 1) / (2 * i + 1); //element i
-                sum += element; // add element i to the results so far
             }
-            return 4 * sum;
-
-
-
+        }
+        return sum;
     }
 }
