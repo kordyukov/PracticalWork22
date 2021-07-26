@@ -4,15 +4,25 @@ import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class Runner {
-    public void run(){
-        Scanner scanner = new Scanner(System.in);
-        double pi;
-
+    public void run()
+    {
         System.out.println("Введмите значение ряда n:");
+        System.out.println(MyCalculate.calcPi(inputNumber()));
+    }
 
-            pi = MyCalculate.calcPi(scanner.nextInt());
-
-        System.out.println(pi);
+    public int inputNumber() {
+        Scanner sc = new Scanner(System.in);
+        while (true) {
+            if (sc.hasNextInt()) {
+                int number = sc.nextInt();
+                if (number > 0) return number;
+            } else {
+                sc.next();
+            }
+            System.out.println("Error enter number. Repeat!!!");
+        }
+    }
 
     }
-}
+
+

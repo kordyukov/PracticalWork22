@@ -9,7 +9,6 @@ public class MyCalculate {
             sum += Math.pow(-1, i + 1) / (2 * i - 1);
             if (i == 1) {
                 sum *= 4;
-
             }
         }
         return sum;
