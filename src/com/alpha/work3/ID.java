@@ -2,8 +2,9 @@ package com.alpha.work3;
 
 public class ID {
     private int id;
-    public static int nextId;
-    {
+    private static int nextId;
+
+    static {
         nextId = 0 + (int) (Math.random() * 100);
     }
 
