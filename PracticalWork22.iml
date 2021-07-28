@@ -8,10 +8,10 @@
     <content url="jar://$MODULE_DIR$/out/production/PracticalWork22/com/alpha/calculate.jar!/" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/calculate.jar!/" />
+          <root url="jar://$MODULE_DIR$/out/production/PracticalWork22/calculate.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
